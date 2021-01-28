@@ -20,11 +20,71 @@
     <!-- /.content-header -->
 
     <!-- Main content -->
-    <section class="content">
         <div class="container-fluid">
-        Meu conteúdo vem aqui.
-        </div><!-- /.container-fluid -->
-    </section>
+        <div class="row">
+            <div class="col-12">
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">DataTable with default features</h3>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                        <table id="tabela-produtos" class="table text-center table-bordered table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Còdigo</th>
+                                    <th>Produto</th>
+                                    <th>Tipo</th>
+                                    <th>Valor (R$)</th>
+                                    <th>Alções</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php
+                                foreach ($dados as $dado) {
+                                    ?>
+
+                                    <tr>
+                                        <td><?php echo $dado ['id']; ?></td>
+                                        <td><?php echo $dado ['nome']; ?>
+                                        </td>
+                                        <td><?php echo $dado ['tipo']; ?></td>
+                                        <td><?php echo $dado ['valor']; ?></td>
+                                        <td>
+                                            <!--vizualiza-->
+                                            <a href="#" class="btn btn-outline-success">
+                                                <span class="fa fa-eye" ></span>
+                                            </a>
+                                            <!--editar-->
+                                            <a href="#" class="btn btn-outline-warning">
+                                                <span class="fa fa-edit"></span>
+                                            </a>
+                                            <!--apagar-->
+                                            <a href="#" class="btn btn-outline-danger">
+                                                <span class="fa fa-trash" ></span>
+                                            </a>
+
+                                        </td>
+                                    </tr>
+
+                                    <?php
+                                }
+                                ?>
+
+
+
+                            </tbody>                                   
+                        </table>
+                    </div>
+                    <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+    </div>
     <!-- /.content -->
 </div>
 <!-- /.content-wrapper -->
