@@ -29,10 +29,22 @@ if ($pg) {
             include_once 'painel/paginas/includes/footer.php';
             break;
 
+        case 'produtos-item':
+            $id = $_GET ['id'];
+            
+             $resultDados = new conexao();
+            $dados = $resultDados->selecionaDados('SELECT * FROM produtos WHERE  id = '. $id);
+            
+            include_once 'painel/paginas/includes/header.php';
+            include_once 'painel/paginas/includes/menus.php';
+            include_once 'painel/paginas/produtos-item.php';
+            include_once 'painel/paginas/includes/footer.php';
+            break;
+
         case 'servicos':
             $resultDados = new conexao();
             $dados = $resultDados->selecionaDados('SELECT * FROM serviços');
-            
+
             include_once 'painel/paginas/includes/header.php';
             include_once 'painel/paginas/includes/menus.php';
             include_once 'painel/paginas/servicos.php';
@@ -42,7 +54,7 @@ if ($pg) {
         case 'contato':
             $resultDados = new conexao();
             $dados = $resultDados->selecionaDados('SELECT * FROM contato');
-            
+
             include_once 'painel/paginas/includes/header.php';
             include_once 'painel/paginas/includes/menus.php';
             include_once 'painel/paginas/contato.php';

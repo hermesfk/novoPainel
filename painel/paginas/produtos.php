@@ -56,7 +56,7 @@
                                                     <td><?php echo $dado ['valor']; ?></td>
                                                     <td>
                                                         <!--vizualiza-->
-                                                        <a href="#" class="btn btn-outline-success">
+                                                        <a href="?pg=produtos-item&id=<?php echo $dado['id']; ?>" class="btn btn-outline-success">
                                                             <span class="fa fa-eye" ></span>
                                                         </a>
                                                         <!--editar-->
