@@ -20,7 +20,7 @@
     <!-- /.content-header -->
 
     <!-- Main content -->
-        <div class="container-fluid">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-12">
 
@@ -52,8 +52,9 @@
                                         <td><?php echo $dado ['tipo']; ?></td>
                                         <td><?php echo $dado ['valor']; ?></td>
                                         <td>
+
                                             <!--vizualiza-->
-                                            <a href="#" class="btn btn-outline-success">
+                                            <a href="?pg=servicos-item&id=<?php echo $dado['id']; ?>" class="btn btn-outline-success">
                                                 <span class="fa fa-eye" ></span>
                                             </a>
                                             <!--editar-->
