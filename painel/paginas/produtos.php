@@ -60,7 +60,7 @@
                                                             <span class="fa fa-eye" ></span>
                                                         </a>
                                                         <!--editar-->
-                                                        <a href="#" class="btn btn-outline-warning">
+                                                        <a href="?pg=produtos-editar&id=<?php echo $dado['id']; ?>" class="btn btn-outline-warning">
                                                             <span class="fa fa-edit"></span>
                                                         </a>
                                                         <!--apagar-->
