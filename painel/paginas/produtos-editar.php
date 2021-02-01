@@ -34,18 +34,23 @@
               <!-- /.card-header -->
               <!-- form start -->
               <form id="quickForm">
+                  <?php foreach ($dados as $dado){
+                  }
+        
+                      ?>
+
                 <div class="card-body">
                   <div class="form-group">
                     <label for="nome">Nome Produto</label>
-                    <input type="text" name="nome" class="form-control" id="nome" placeholder="">
+                    <input value="<?php   echo $dado ['nome'];?>"type="text" name="nome" class="form-control" id="nome" placeholder="">
                   </div>
                   <div class="form-group">
                     <label for="tipo">Tipo do Produto</label>
-                    <input type="text" name="tipo" class="form-control" id="tipo">
+                    <input value="<?php   echo $dado ['tipo'];?>" type="text" name="tipo" class="form-control" id="tipo">
                   </div>
                   <div class="form-group">
                     <label for="valor">Valor em real R$</label>
-                    <input type="text" name="valor" class="form-control" id="valor">
+                    <input value="<?php   echo $dado ['valor'];?>" type="text" name="valor" class="form-control" id="valor">
                   </div>
                   <div class="form-group mb-0">
                     <div class="custom-control custom-checkbox">
