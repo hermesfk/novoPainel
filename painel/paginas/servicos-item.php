@@ -24,9 +24,9 @@
            <?php 
            
            foreach ($dados as $dado) {
-               echo  $dado['nome'].'<br>';
-               echo  $dado['tipo'].'<br>';
-               echo  $dado['valor'].'<br>';
+              echo  $dado['nome'].'<br>';
+              echo  $dado['tipo'].'<br>';
+              echo  $dado['valor'].'<br>';
            }
            
            

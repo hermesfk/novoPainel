@@ -1,5 +1,4 @@
 
-<!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <div class="content-header">
@@ -33,25 +32,23 @@
                         </div>
                         <!-- /.card-header -->
                         <!-- form start -->
-                        <form action="?pg=produto-editar" method="POST">
+                        <form id="quickForm">
                             <?php foreach ($dados as $dado) {
                                 ?>
 
                                 <div class="card-body">
                                     <div class="form-group">
                                         <label for="nome">Nome Produto</label>
-                                        <input type="text" value="<?php echo $dado ['nome']; ?>" name="nome" class="form-control" id="nome" placeholder="">
+                                        <input value="<?php echo $dado ['nome']; ?>"type="text" name="nome" class="form-control" id="nome" placeholder="">
                                     </div>
                                     <div class="form-group">
                                         <label for="tipo">Tipo do Produto</label>
-                                        <input  type="text" value="<?php echo $dado ['tipo']; ?>" name="tipo" class="form-control" id="tipo">
+                                        <input value="<?php echo $dado ['tipo']; ?>" type="text" name="tipo" class="form-control" id="tipo">
                                     </div>
                                     <div class="form-group">
                                         <label for="valor">Valor em real R$</label>
-                                        <input  type="text" value="<?php echo $dado ['valor']; ?>" name="valor" class="form-control" id="valor">
+                                        <input value="<?php echo $dado ['valor']; ?>" type="text" name="valor" class="form-control" id="valor">
                                     </div>
-                                    <input  type="hidden" value="<?php echo $dado['id']; ?>" name="id">
-                                    
                                     <div class="form-group mb-0">
                                         <div class="custom-control custom-checkbox">
                                             <input type="checkbox" name="terms" class="custom-control-input" id="exampleCheck1">
@@ -61,8 +58,7 @@
                                 </div>
                                 <!-- /.card-body -->
                                 <div class="card-footer">
-                                    <a href="?pg=produtos"><button  type="submit" class=" btn btn-primary"><i class="fas fa-save"></i> atualiza</button> </a>
-                                    <button  type="submit" class=" btn btn-primary">VOLTA</button>
+                                    <button  type="submit" class=" btn btn-primary">Submit</button>
                                 </div>
                                 <?php
                             }

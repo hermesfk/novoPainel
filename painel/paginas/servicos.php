@@ -58,7 +58,7 @@
                                                 <span class="fa fa-eye" ></span>
                                             </a>
                                             <!--editar-->
-                                            <a href="#" class="btn btn-outline-warning">
+                                            <a href="?pg=servicos-editar&id" class="btn btn-outline-warning">
                                                 <span class="fa fa-edit"></span>
                                             </a>
                                             <!--apagar-->
