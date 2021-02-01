@@ -54,9 +54,11 @@ if ($pg) {
                 $idProdutoEditar = isset($_GET['id']);
                 if ($idProdutoEditar) {
                     $resultDados = new conexao();
-                    $dados = $resultDados->selecionaDados('SELECT * FROM produtos WHERE  id = ' . $idProdutoEditar);
+                    $dados = $resultDados->selecionaDados('SELECT * FROM produtos WHERE  id = ' . $_GET['id']);
                     include_once 'painel/paginas/produtos-editar.php';
-                } 
+                } else {
+                    echo 'variavel não definida';
+                }
             }
 
             include_once 'painel/paginas/includes/footer.php';
